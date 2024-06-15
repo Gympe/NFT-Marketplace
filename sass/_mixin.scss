@@ -1,0 +1,10 @@
+@mixin DynamicStyles($ptb, $plr, $mtb, $mlr) {
+    padding: $ptb $plr;
+    margin: $mtb $mlr;
+}
+
+@mixin FlexCenter {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}

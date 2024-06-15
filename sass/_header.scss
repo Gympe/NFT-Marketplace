@@ -1,0 +1,367 @@
+.TitleIcon {
+    @include DynamicStyles(40px, 80px, 0, 0);
+    @media screen and (max-width: 390px) {
+        padding: 100px 50px;
+        display: flex;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.Vector {
+    position: absolute;
+    top: 12%;
+    left: 270%;
+    display: none;
+    @media screen and (max-width: 390px) {
+        display: flex;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.NavBlurr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1600px;
+    z-index: -1;
+
+    @media screen and (max-width: 390px) {
+        width: 333%;
+    }
+}
+
+.NavBlurr img {
+    width: 100%;
+}
+
+.MediaHeroImg {
+    @media screen and (max-width: 390px) {
+        position: absolute;
+        left: 250%;
+        top: 160%;
+        display: none;
+    }
+
+    .NavImg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        .NavImg2 {
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 300px 200px 0px 0px;
+        }
+        .NavImg3 {
+            position: absolute;
+            width: 500px;
+            height: 110px;
+            z-index: 1;
+            background: linear-gradient(to right, #ff643d7d, #fafafabd);
+            box-shadow: 10px 5px 5px #0000001f;
+            top: 30%;
+            right: 29%;
+        }
+        .NavImgText1 {
+            position: absolute;
+            color: var(--color-1);
+            font-family: "Oxanium";
+            font-size: 1.2rem;
+            z-index: 2;
+            top: 32.5%;
+            right: 73%;
+        }
+        .NavImgText2 {
+            position: absolute;
+            color: var(--color-1);
+            font-family: "Oxanium";
+            font-size: 1.2rem;
+            z-index: 2;
+            top: 32.5%;
+            right: 39%;
+        }
+        .NavImgText3 {
+            position: absolute;
+            color: var(--color-1);
+            font-family: "Oxanium";
+            font-size: 2rem;
+            font-weight: bold;
+            z-index: 2;
+            top: 35%;
+            right: 69%;
+        }
+        .NavImgText4 {
+            position: absolute;
+            color: var(--color-1);
+            font-family: "Oxanium";
+            font-size: 2rem;
+            font-weight: bold;
+            z-index: 2;
+            top: 35%;
+            right: 35.5%;
+        }
+        .HeroButtom {
+            position: absolute;
+            top: 79.7%;
+            right: 25%;
+            width: 556px;
+            height: 141px;
+            background-color: #fff;
+        }
+        .HeroBText1 {
+            position: absolute;
+            font-size: 2rem;
+            font-family: "Oxanium";
+            font-weight: 600;
+            color: #16091b;
+            top: 82.5%;
+            right: 76%;
+        }
+        .HeroBText2 {
+            position: absolute;
+            font-family: "Work Sans";
+            font-size: 1.5rem;
+            color: #594d5e;
+            top: 86.5%;
+            right: 75%;
+        }
+        .HeroBText3 {
+            @include DynamicStyles(25px, 43px, 0, 0);
+            position: absolute;
+            font-family: "Work Sans";
+            font-size: 1.7rem;
+            font-weight: bold;
+            background-color: var(--bg-color-1);
+            top: 82.5%;
+            right: 30%;
+        }
+    }
+}
+
+.NavImg1 {
+    width: 800px;
+    height: 1100px;
+    background-color: #4f464e73;
+    z-index: -1;
+
+    @media screen and (max-width: 390px) {
+        display: none;
+    }
+}
+
+.NavigationButtons {
+    display: flex;
+    position: absolute;
+    color: var(--color-1);
+    font-family: "Work Sans";
+    gap: 80px;
+    left: 45%;
+    top: 6%;
+
+    @media screen and (max-width: 390px) {
+        display: none;
+    }
+
+    .NavBHover1 {
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s ease;
+    }
+    .NavBHover2 {
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s ease;
+    }
+    .NavBHover3 {
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s ease;
+    }
+}
+
+.NavBHover1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--bg-color-1);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: bottom;
+}
+
+.NavBHover1:hover {
+    color: var(--bg-color-1);
+    cursor: pointer;
+}
+
+.NavBHover1:hover::after {
+    transform: scaleX(1);
+}
+
+.NavBHover2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--bg-color-1);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: bottom;
+}
+
+.NavBHover2:hover {
+    color: var(--bg-color-1);
+    cursor: pointer;
+}
+
+.NavBHover2:hover::after {
+    transform: scaleX(1);
+}
+
+.NavBHover3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--bg-color-1);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: bottom;
+}
+
+.NavBHover3:hover {
+    color: var(--bg-color-1);
+    cursor: pointer;
+}
+
+.NavBHover3:hover::after {
+    transform: scaleX(1);
+}
+
+.NavWallet {
+    @include DynamicStyles(20px, 25px, 0, 0);
+    position: absolute;
+    font-family: "Work Sans";
+    color: var(--bg-color-1);
+    right: 13%;
+    top: 5%;
+    background-color: #e9d7a71a;
+    border: 1px solid var(--bg-color-1);
+    transition: transform 0.3s ease;
+
+    @media screen and (max-width: 390px) {
+        display: none;
+    }
+}
+
+.NavWallet:hover {
+    transform: scale(1.1);
+}
+
+.Patern {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    @media screen and (max-width: 390px) {
+        display: flex;
+    }
+}
+
+.NavText {
+    @include DynamicStyles(0px, 0px, 125px, 60px);
+    display: block;
+    font-family: "Oxanium";
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--color-1);
+    width: 900px;
+    align-items: center;
+
+    @media screen and (max-width: 390px) {
+        text-align: center;
+        padding: 100px 120px;
+    }
+
+    .NavTextYellow {
+        color: var(--bg-color-1);
+    }
+}
+
+.NavButton1 {
+    @include DynamicStyles(26px, 90px, 0, 0);
+    position: absolute;
+    font-size: 2rem;
+    font-family: "Work Sans";
+    font-weight: 550;
+    left: 70px;
+    background-color: var(--bg-color-1);
+    transition: transform 0.3s ease;
+
+    @media screen and (max-width: 390px) {
+        left: 49%;
+        transform: scale(1.8);
+    }
+}
+
+.NavButton1:hover {
+    transform: scale(1.1);
+}
+
+.NavButton2 {
+    @include DynamicStyles(25px, 90px, 0, 0);
+    position: absolute;
+    font-size: 2rem;
+    font-family: "Work Sans";
+    font-weight: 550;
+    left: 420px;
+    color: var(--color-1);
+    background-color: #e9d7a71a;
+    border: 1px solid var(--bg-color-1);
+    transition: transform 0.3s ease;
+
+    @media screen and (max-width: 390px) {
+        left: 200%;
+        transform: scale(1.78);
+    }
+}
+
+.NavButton2:hover {
+    transform: scale(1.1);
+}
+
+.MediaCounter {
+    @media screen and (max-width: 390px) {
+        margin: 200px 0 0 50px;
+        transform: scale(1.6);
+    }
+
+    .NavCounter {
+        display: flex;
+        font-size: 4rem;
+        font-family: "Oxanium";
+        font-weight: bold;
+        color: var(--color-1);
+        gap: 120px;
+        margin: 350px 80px 0px;
+    }
+
+    .NavCounterText {
+        @include DynamicStyles(0px, 0px, 0px, 100px);
+        display: flex;
+        font-size: 1.3rem;
+        font-family: "Work Sans";
+        font-weight: 380;
+        color: var(--color-5);
+        gap: 180px;
+    }
+}

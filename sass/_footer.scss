@@ -1,0 +1,121 @@
+footer {
+    background-color: #251928;
+    width: 100%;
+    margin-top: 90px;
+
+    @media screen and (max-width: 390px) {
+        padding-bottom: 2200px;
+        padding-right: 900px;
+    }
+}
+
+.FooterColumn {
+    flex-direction: column;
+}
+
+.FooterBlock {
+    display: flex;
+}
+
+.FooterImg {
+    margin: 110px 20px 120px 70px;
+
+    @media screen and (max-width: 390px) {
+        margin: 210px 200px 50px 200px;
+        position: absolute;
+        transform: scale(1.7);
+        left: 80%;
+    }
+}
+
+.FooterText1 {
+    width: 380px;
+    font-family: "Work Sans";
+    font-size: 1.2rem;
+    color: var(--color-4);
+    margin: 110px 50px 30px 0;
+    line-height: 2;
+
+    @media screen and (max-width: 390px) {
+        transform: scale(3);
+        position: absolute;
+        left: 110%;
+        bottom: -665%;
+        text-align: center;
+    }
+}
+
+.FooterText2 {
+    font-family: "Work Sans";
+    color: var(--color-4);
+    margin: 50px 50px 20px 0;
+}
+
+.MediaFooterImg {
+    @media screen and (max-width: 390px) {
+        position: absolute;
+        transform: scale(4);
+        left: 140%;
+        bottom: -800%;
+        white-space: nowrap;
+    }
+}
+
+.AboutText1 {
+    color: var(--color-1);
+    font-family: "Work Sans";
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 100px 20px 10px 500px;
+    @media screen and (max-width: 390px) {
+        position: absolute;
+        white-space: nowrap;
+        transform: scale(3);
+        left: -50%;
+        bottom: -697%;
+    }
+}
+
+.AboutText2 {
+    color: var(--color-4);
+    font-family: "Work Sans";
+    margin: 50px 20px 10px 500px;
+    width: 122px;
+    line-height: 3;
+
+    @media screen and (max-width: 390px) {
+        position: absolute;
+        transform: scale(3);
+        left: -46%;
+        bottom: -740%;
+    }
+}
+
+.SupportText1 {
+    color: var(--color-1);
+    font-family: "Work Sans";
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 100px 0 10px 200px;
+    @media screen and (max-width: 390px) {
+        position: absolute;
+        white-space: nowrap;
+        transform: scale(3);
+        left: 160%;
+        bottom: -697%;
+    }
+}
+
+.SupportText2 {
+    color: var(--color-4);
+    font-family: "Work Sans";
+    margin: 50px 0 10px 200px;
+    width: 122px;
+    line-height: 3;
+    @media screen and (max-width: 390px) {
+        position: absolute;
+        transform: scale(3);
+        left: 166%;
+        bottom: -740%;
+    }
+}

@@ -1,0 +1,183 @@
+.ClientsLogo {
+    display: flex;
+    padding-top: 260px;
+    padding-left: 150px;
+    gap: 200px;
+
+    @media screen and (max-width: 390px) {
+        display: grid;
+        padding: 260px 250px 200px 200px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px;
+        transform: scale(1.7);
+    }
+}
+
+.TitleAuc {
+    @include FlexCenter;
+    font-size: 3rem;
+    font-family: "Oxanium";
+    font-weight: bold;
+    color: var(--color-1);
+    padding-top: 150px;
+
+    @media screen and (max-width: 390px) {
+        transform: scale(1.7);
+        margin-left: 600px;
+        white-space: nowrap;
+        padding-bottom: 100px;
+    }
+}
+
+.TitleAuc::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    margin: -16px 290px 0px 0px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #8613a5;
+    z-index: -1;
+}
+
+.VideoWrapper {
+    position: relative;
+    padding: 350px 0 350px 0;
+    @media screen and (max-width: 390px) {
+        left: 0;
+        transform: scale(1.1);
+    }
+
+    .VideoContainer {
+        position: absolute;
+        top: 10%;
+        left: 25%;
+    }
+
+    .Video {
+        display: flex;
+    }
+}
+
+.Video {
+    display: flex;
+}
+
+.TitleAuc2 {
+    @include FlexCenter;
+    font-size: 3rem;
+    font-family: "Oxanium";
+    font-weight: bold;
+    color: var(--color-1);
+    z-index: 1;
+
+    @media screen and (max-width: 390px) {
+        transform: scale(1.7);
+        margin-left: 600px;
+        white-space: nowrap;
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+}
+
+.TitleAuc2::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    margin: -16px 290px 0px 0px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #e03054;
+    z-index: -1;
+}
+
+.Creators {
+    @include DynamicStyles(100px, 200px, 0, 0);
+    display: grid;
+    grid-gap: 46px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: 390px) {
+        grid-template-columns: repeat(1, 1fr);
+        transform: scale(1.6);
+        padding: 400px 100px 400px 150px;
+    }
+
+    .Creator {
+        @include DynamicStyles(30px, 10px, 0, 0);
+        display: flex;
+        background-color: #302034;
+        border-left: 2px solid #e03054;
+    }
+
+    .CreatText {
+        font-weight: 500;
+        padding: 15px 0;
+        flex-direction: column;
+        font-family: "Oxanium";
+        color: var(--color-1);
+    }
+
+    .CreatImg {
+        @include DynamicStyles(0, 0, 5px, 20px);
+    }
+
+    .CreatText2 {
+        font-family: "Work Sans";
+        flex-direction: column;
+        font-size: 1.9rem;
+        color: #bdaac1;
+    }
+
+    .CreatLine {
+        margin-left: 220px;
+        margin-right: 20px;
+        width: 3px;
+        height: 100px;
+        background-color: #49374e;
+    }
+
+    .CreatNamber {
+        padding: 20px;
+        padding-left: 40px;
+        font-size: 2.5rem;
+        font-family: "Work Sans";
+        font-weight: 600;
+        color: var(--color-1);
+    }
+
+    .Column {
+        flex-direction: column;
+    }
+
+    .CreatItem {
+        font-family: "Work Sans";
+        padding-left: 26px;
+        font-size: 1.6rem;
+        color: #908294;
+    }
+}
+
+.ButtonMain {
+    @include DynamicStyles(25px, 90px, 0, 0);
+    @include FlexCenter;
+    font-size: 2rem;
+    font-family: "Work Sans";
+    font-weight: 550;
+    width: 150px;
+    left: 42.5%;
+    color: var(--color-1);
+    border: 1px solid var(--bg-color-1);
+    transition: transform 0.3s ease;
+
+    @media screen and (max-width: 390px) {
+        transform: scale(1.6);
+        margin: 0 250px;
+    }
+}
+
+.ButtonMain:hover {
+    transform: scale(1.1);
+}
